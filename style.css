@@ -1,0 +1,52 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #b73843;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+/* menu navegação*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul .home {
+    margin-right: auto; /* empurra os outros itens pra direita */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #bc2a42;
+    transform: scale(1.05);
+}
+img{
+	width:100%;
+	max-width: 700px;
+	height:800px;
+	object-fit:cover;
+	border-radius:34px;
+	margin: 20px auto;
+	display:block;
+
+}
