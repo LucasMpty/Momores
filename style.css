@@ -1,0 +1,106 @@
+/*--------------------------------------------------------------------------------------------------PAGINA INICIAL*/
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #b73843;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+/* menu navegação*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul .home {
+    margin-right: auto; /* empurra os outros itens pra direita */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #bc2a42;
+    transform: scale(1.05);
+}
+img{
+	width:100%;
+	max-width: 700px;
+	height:800px;
+	object-fit:cover;
+	border-radius:34px;
+	margin: 20px auto;
+	display:block;
+
+}
+/*-----------------------------------------------------------------------------------------------------PAGINA DE FOTOS*/
+
+.carousel {
+  position: relative;
+  width: 100%;            /* ocupa 90% da tela */
+  max-width: 800px;     /* limite máximo */
+  aspect-ratio: auto;    /* mantém proporção bonita */
+  overflow: hidden;
+    height: 820px;
+  margin: auto;
+  border-radius: 27px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+   background-color: #b73843;
+}
+
+
+.carousel-track {
+  display: flex;
+    transition: transform 0.5s ease-in-out;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+   background-color: #b73843;
+}
+
+.carousel img {
+  object-fit: contain; /* mantém a imagem inteira, mas pode aparecer espaço em branco */
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* opcional, preenche o espaço vazio */
+  object-position: center;
+  object-fit: cover;
+   background-color: #b73843;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+button.prev { left: 15px; }
+button.next { right: 15px; }
+
